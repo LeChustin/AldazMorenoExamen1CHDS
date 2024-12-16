@@ -6,22 +6,24 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Botón para consumir el servicio -->
-    <Button
-        android:id="@+id/btnConsumir"
+    <EditText
+        android:id="@+id/etNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Consumir WS" />
+        android:hint="Ingresa un número"
+        android:inputType="number"/>
 
-    <!-- Cuadro de texto para mostrar la respuesta -->
-    <TextView
-        android:id="@+id/txtRespuesta"
+    <Button
+        android:id="@+id/btnFetch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:padding="8dp"
-        android:text="Esperando respuesta..."
-        android:textSize="16sp"
-        android:background="@android:color/darker_gray"
-        android:textColor="@android:color/white" />
+        android:text="Obtener Nombre"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Resultado aquí"
+        android:textSize="18sp"/>
 </LinearLayout>
