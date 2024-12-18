@@ -6,27 +6,31 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <Button
-        android:id="@+id/btnNombre"
+    <EditText
+        android:id="@+id/etLado1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver Nombres"/>
+        android:hint="Ingrese Lado 1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etLado2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese Lado 2"
+        android:inputType="numberDecimal" />
 
     <Button
-        android:id="@+id/btnAldaz"
+        android:id="@+id/btnCalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver Información Personal"/>
+        android:text="Calcular" />
 
-    <Button
-        android:id="@+id/btnSuma"
+    <TextView
+        android:id="@+id/tvResultados"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Suma Dinámica"/>
-
-    <Button
-        android:id="@+id/btnCalculos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cálculos Geométricos"/>
+        android:text="Resultados"
+        android:textSize="18sp"
+        android:paddingTop="16dp" />
 </LinearLayout>
